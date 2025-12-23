@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SDK Projects | Engineering, Robotics & IT Solutions</title>
+
+<meta name="description" content="School projects, college projects, engineering projects, robotics, drones, IoT, embedded systems, PCB design and R&D services in Anna Nagar Chennai">
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f6f8;
+}
+header{
+    background:#0a3d62;
+    color:white;
+    padding:25px;
+    text-align:center;
+}
+nav{
+    background:#1e3799;
+    padding:12px;
+    text-align:center;
+}
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:12px;
+    font-weight:bold;
+}
+section{
+    padding:40px 20px;
+    max-width:1200px;
+    margin:auto;
+}
+h2{
+    color:#0a3d62;
+    margin-bottom:20px;
+}
+
+/* SERVICES */
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:18px;
+}
+.service-box{
+    background:white;
+    padding:15px;
+    border-radius:8px;
+    box-shadow:0 0 8px rgba(0,0,0,0.15);
+    text-align:center;
+    font-weight:bold;
+}
+
+/* GALLERY */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+    gap:20px;
+}
+.imgbox{
+    background:white;
+    padding:10px;
+    border-radius:10px;
+    box-shadow:0 0 8px rgba(0,0,0,0.15);
+    text-align:center;
+}
+.imgbox img{
+    width:100%;
+    height:160px;
+    object-fit:contain;
+    cursor:pointer;
+    border-radius:6px;
+}
+.imgbox p{
+    margin-top:8px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+/* LIGHTBOX */
+.lightbox{
+    display:none;
+    position:fixed;
+    z-index:9999;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.9);
+    justify-content:center;
+    align-items:center;
+}
+.lightbox img{
+    max-width:90%;
+    max-height:90%;
+}
+.lightbox span{
+    position:absolute;
+    top:20px;
+    right:30px;
+    font-size:35px;
+    color:white;
+    cursor:pointer;
+}
+
+/* CONTACT */
+.contact{
+    background:#0a3d62;
+    color:white;
+    padding:25px;
+    border-radius:10px;
+}
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 20px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+/* FOOTER */
+footer{
+    background:#1e3799;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+/* WHATSAPP */
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px;
+    border-radius:50%;
+    font-size:22px;
+    text-decoration:none;
+    box-shadow:0 0 10px rgba(0,0,0,0.3);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>SDK PROJECTS</h1>
+<p>Your Projects – Our Expertise</p>
+</header>
+
+<nav>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#gallery">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+<h2>About Us</h2>
+<p>
+SDK Projects is a professional <b>project development and consultancy center</b>
+based in <b>Anna Nagar, Chennai</b>.
+</p>
+</section>
+
+<section id="services">
+<h2>Our Services</h2>
+<div class="services">
+<div class="service-box">School Projects</div>
+<div class="service-box">College Projects</div>
+<div class="service-box">Engineering Projects</div>
+<div class="service-box">Robotics & Drone Projects</div>
+<div class="service-box">Embedded & IoT Projects</div>
+<div class="service-box">Custom Working Models</div>
+</div>
+</section>
+
+<section id="gallery">
+<h2>Our Project Works</h2>
+<div class="gallery">
+<div class="imgbox"><img src="p2.jpg" onclick="openLightbox(this.src)"><p>Automation Project</p></div>
+<div class="imgbox"><img src="p3.jpg" onclick="openLightbox(this.src)"><p>Fork Lift Project</p></div>
+<div class="imgbox"><img src="p4.jpg" onclick="openLightbox(this.src)"><p>Water Cycle Model</p></div>
+<div class="imgbox"><img src="p5.jpg" onclick="openLightbox(this.src)"><p>Smart Home Model</p></div>
+<div class="imgbox"><img src="p6.jpg" onclick="openLightbox(this.src)"><p>Biology Cell Model</p></div>
+<div class="imgbox"><img src="p7.jpg" onclick="openLightbox(this.src)"><p>DNA Structure Model</p></div>
+<div class="imgbox"><img src="p8.jpg" onclick="openLightbox(this.src)"><p>Smart City Project</p></div>
+<div class="imgbox"><img src="p9.jpg" onclick="openLightbox(this.src)"><p>Humanoid Robot</p></div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+<div class="contact">
+<p><b>📞 Phone:</b> 8925149469</p>
+<p><b>📧 Email:</b> sdkprojectssdk@gmail.com</p>
+<p><b>📍 Address:</b><br>
+212/2, AA Block, 3rd Main Rd,<br>
+Near Round Turn Signal,<br>
+Z Block, Ranganathan Garden,<br>
+Anna Nagar, Chennai – 600040
+</p>
+
+<!-- ✅ FIXED GOOGLE MAP DIRECTIONS -->
+<a class="btn" target="_blank"
+href="https://www.google.com/maps/dir/?api=1&destination=212%2F2%2C+AA+Block%2C+3rd+Main+Rd%2C+Near+Round+Turn+Signal%2C+Z+Block%2C+Ranganathan+Garden%2C+Anna+Nagar%2C+Chennai%2C+Tamil+Nadu+600040">
+📍 Get Directions to Our Shop
+</a>
+
+</div>
+</section>
+
+<footer>
+<p>© 2025 SDK Projects | All Rights Reserved</p>
+</footer>
+
+<!-- WHATSAPP BUTTON -->
+<a class="whatsapp" href="https://wa.me/918925149469" target="_blank">💬</a>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+<span onclick="closeLightbox()">×</span>
+<img id="lightboxImg">
+</div>
+
+<script>
+function openLightbox(src){
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("lightboxImg").src = src;
+}
+function closeLightbox(){
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</body>
+</html>
